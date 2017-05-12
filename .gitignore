@@ -48,3 +48,6 @@ Temporary Items
 xingo_demo_unity3d/Library/AnnotationManager
 xingo_demo_unity3d/Library
 xingo_demo_unity3d/Temp
+*.sln
+xingo_demo_unity3d/.vs/xingo_demo_unity3d/v14/.suo
+xingo_demo_unity3d/xingo_demo_unity3d.CSharp.csproj
