@@ -281,7 +281,8 @@ public class SocketClient
             ProtoTest.FrameInfo frameInfo = ProtoTest.FrameInfo.Parser.ParseFrom(bytes);
             Loom.QueueOnMainThread(() =>
             {
-                if(frameInfo.ObjBorn!=null && frameInfo.ObjBorn.Count>0) NetMgr.OnBornBullet(frameInfo.ObjBorn);
+                if (frameInfo.Hit != null && frameInfo.Hit.Count > 0) NetMgr.OnHit(frameInfo.Hit);
+                if (frameInfo.ObjBorn!=null && frameInfo.ObjBorn.Count>0) NetMgr.OnBornBullet(frameInfo.ObjBorn);
                 if (frameInfo.ObjMove != null && frameInfo.ObjMove.Count > 0) NetMgr.OnMoveBullet(frameInfo.ObjMove);
                 if (frameInfo.ObjDeleted != null && frameInfo.ObjDeleted.Count > 0) NetMgr.OnBulletDeleted(frameInfo.ObjDeleted);
             });

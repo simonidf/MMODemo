@@ -46,12 +46,23 @@ public class AIController : MonoBehaviour {
         net = GameObject.Find("Game").GetComponent<NetMgr>();
         NetMgr.OnMove += OnMoveFunction;
         NetMgr.OnOver += OnOver;
-
+        NetMgr.OnHit += BeHit;
         //设置UI
         var name = GetComponent<PlayerInformationUIController>().textNameOwn;
         name.text = "Player_" + PlayerID.ToString();
 
         //StartCoroutine("MoveLogic");
+    }
+
+    void BeHit(Google.Protobuf.Collections.RepeatedField<ProtoTest.Hit> hits)
+    {
+        foreach (var VARIABLE in hits)
+        {
+            if (VARIABLE.Pid == PlayerID)
+            {
+                playerAnimator.Play("BeHit");
+            }
+        }
     }
 
     IEnumerator MoveLogic()

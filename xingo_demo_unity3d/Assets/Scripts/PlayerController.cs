@@ -47,8 +47,20 @@ public class PlayerController : UnitySingleton<PlayerController>
 
         NetMgr.OnBorn += OnBorn;
         NetMgr.OnMove += OnMove;
+        NetMgr.OnHit += BeHit;
 
         netMgr.SendConnect(GameMgr.GameIP, GameMgr.GamePort);
+    }
+
+    void BeHit(Google.Protobuf.Collections.RepeatedField<ProtoTest.Hit> hits)
+    {
+        foreach (var VARIABLE in hits)
+        {
+            if (VARIABLE.Pid == MID)
+            {
+                playerAnimator.Play("BeHit");
+            }
+        }
     }
 
     void OnBorn(int id)
