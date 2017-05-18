@@ -6,6 +6,7 @@ using System.Net.Sockets;
 using System.Collections;
 using System.Collections.Generic;
 using Pb;
+using Google.Protobuf;
 
 public enum DisType
 {
@@ -68,6 +69,24 @@ public class SocketClient
         Debug.Log("Connect Suc");
         outStream = client.GetStream();
         client.GetStream().BeginRead(byteBuffer, 0, MAX_READ, new AsyncCallback(OnRead), null);
+
+        Loom.QueueOnMainThread(() =>
+        {
+            ByteBuffer b = new ByteBuffer();
+
+            ProtoTest.CredentialInfo p = new ProtoTest.CredentialInfo();
+            p.Cre = GameObject.Find("P1").GetComponent<FlowController>().gameCredential;
+
+            MemoryStream ms = new MemoryStream();
+            p.WriteTo(ms);
+            byte[] bytes = ms.ToArray();
+
+            b.WriteInt(bytes.Length);
+            b.WriteInt(5);
+            b.WriteBytes(bytes);
+
+            SendMessage(b);
+        });
     }
 
 

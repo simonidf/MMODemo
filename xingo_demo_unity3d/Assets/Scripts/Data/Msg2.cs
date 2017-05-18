@@ -34,21 +34,22 @@ namespace ProtoTest {
             "AhIJCgF5GAMgASgCEgkKAXoYBCABKAISCQoBdhgFIAEoAhIPCgdkZWxldGVk",
             "GAYgASgIIlcKDFNraWxsT2JqSW5mbxIKCgJpZBgBIAEoBRIJCgF4GAIgASgC",
             "EgkKAXkYAyABKAISCQoBehgEIAEoAhIJCgF2GAUgASgCEg8KB2RlbGV0ZWQY",
-            "BiABKAgiiQUKCUZyYW1lSW5mbxIoCgluZXdQbGF5ZXIYASADKAsyFS5Qcm90",
-            "b1Rlc3QuUGxheWVySW5mbxIpCgpwbGF5ZXJNb3ZlGAIgAygLMhUuUHJvdG9U",
-            "ZXN0LlBsYXllckluZm8SKQoKcGxheWVyRGVhZBgDIAMoCzIVLlByb3RvVGVz",
-            "dC5QbGF5ZXJJbmZvEi0KDGF0dGFja0FjdGlvbhgEIAMoCzIXLlByb3RvVGVz",
-            "dC5BdHRhY2tBY3Rpb24SGwoDaGl0GAUgAygLMg4uUHJvdG9UZXN0LkhpdBIq",
-            "Cgxza2lsbFByZXBhcmUYBiADKAsyFC5Qcm90b1Rlc3QuU2tpbGxJbmZvEikK",
-            "C3NraWxsQ2FuY2VsGAcgAygLMhQuUHJvdG9UZXN0LlNraWxsSW5mbxIqCgxz",
-            "a2lsbFN0YXJ0VXAYCCADKAsyFC5Qcm90b1Rlc3QuU2tpbGxJbmZvEisKDHBs",
-            "YXllclJlbGlmZRgJIAMoCzIVLlByb3RvVGVzdC5QbGF5ZXJJbmZvEiMKB29i",
-            "akJvcm4YCiADKAsyEi5Qcm90b1Rlc3QuT2JqSW5mbxIjCgdvYmpNb3ZlGAsg",
-            "AygLMhIuUHJvdG9UZXN0Lk9iakluZm8SJgoKb2JqRGVsZXRlZBgMIAMoCzIS",
-            "LlByb3RvVGVzdC5PYmpJbmZvEi0KDHNraWxsT2JqQm9ybhgNIAMoCzIXLlBy",
-            "b3RvVGVzdC5Ta2lsbE9iakluZm8SLQoMc2tpbGxPYmpNb3ZlGA4gAygLMhcu",
-            "UHJvdG9UZXN0LlNraWxsT2JqSW5mbxIwCg9za2lsbE9iakRlbGV0ZWQYDyAD",
-            "KAsyFy5Qcm90b1Rlc3QuU2tpbGxPYmpJbmZvYgZwcm90bzM="));
+            "BiABKAgiHQoOQ3JlZGVudGlhbEluZm8SCwoDY3JlGAEgASgJIokFCglGcmFt",
+            "ZUluZm8SKAoJbmV3UGxheWVyGAEgAygLMhUuUHJvdG9UZXN0LlBsYXllcklu",
+            "Zm8SKQoKcGxheWVyTW92ZRgCIAMoCzIVLlByb3RvVGVzdC5QbGF5ZXJJbmZv",
+            "EikKCnBsYXllckRlYWQYAyADKAsyFS5Qcm90b1Rlc3QuUGxheWVySW5mbxIt",
+            "CgxhdHRhY2tBY3Rpb24YBCADKAsyFy5Qcm90b1Rlc3QuQXR0YWNrQWN0aW9u",
+            "EhsKA2hpdBgFIAMoCzIOLlByb3RvVGVzdC5IaXQSKgoMc2tpbGxQcmVwYXJl",
+            "GAYgAygLMhQuUHJvdG9UZXN0LlNraWxsSW5mbxIpCgtza2lsbENhbmNlbBgH",
+            "IAMoCzIULlByb3RvVGVzdC5Ta2lsbEluZm8SKgoMc2tpbGxTdGFydFVwGAgg",
+            "AygLMhQuUHJvdG9UZXN0LlNraWxsSW5mbxIrCgxwbGF5ZXJSZWxpZmUYCSAD",
+            "KAsyFS5Qcm90b1Rlc3QuUGxheWVySW5mbxIjCgdvYmpCb3JuGAogAygLMhIu",
+            "UHJvdG9UZXN0Lk9iakluZm8SIwoHb2JqTW92ZRgLIAMoCzISLlByb3RvVGVz",
+            "dC5PYmpJbmZvEiYKCm9iakRlbGV0ZWQYDCADKAsyEi5Qcm90b1Rlc3QuT2Jq",
+            "SW5mbxItCgxza2lsbE9iakJvcm4YDSADKAsyFy5Qcm90b1Rlc3QuU2tpbGxP",
+            "YmpJbmZvEi0KDHNraWxsT2JqTW92ZRgOIAMoCzIXLlByb3RvVGVzdC5Ta2ls",
+            "bE9iakluZm8SMAoPc2tpbGxPYmpEZWxldGVkGA8gAygLMhcuUHJvdG9UZXN0",
+            "LlNraWxsT2JqSW5mb2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -60,6 +61,7 @@ namespace ProtoTest {
             new pbr::GeneratedClrTypeInfo(typeof(global::ProtoTest.PlayerInfo), global::ProtoTest.PlayerInfo.Parser, new[]{ "Pid", "X", "Y", "Z", "V", "Dead" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ProtoTest.ObjInfo), global::ProtoTest.ObjInfo.Parser, new[]{ "Id", "X", "Y", "Z", "V", "Deleted" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ProtoTest.SkillObjInfo), global::ProtoTest.SkillObjInfo.Parser, new[]{ "Id", "X", "Y", "Z", "V", "Deleted" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ProtoTest.CredentialInfo), global::ProtoTest.CredentialInfo.Parser, new[]{ "Cre" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ProtoTest.FrameInfo), global::ProtoTest.FrameInfo.Parser, new[]{ "NewPlayer", "PlayerMove", "PlayerDead", "AttackAction", "Hit", "SkillPrepare", "SkillCancel", "SkillStartUp", "PlayerRelife", "ObjBorn", "ObjMove", "ObjDeleted", "SkillObjBorn", "SkillObjMove", "SkillObjDeleted" }, null, null, null)
           }));
     }
@@ -1731,6 +1733,123 @@ namespace ProtoTest {
 
   }
 
+  public sealed partial class CredentialInfo : pb::IMessage<CredentialInfo> {
+    private static readonly pb::MessageParser<CredentialInfo> _parser = new pb::MessageParser<CredentialInfo>(() => new CredentialInfo());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CredentialInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ProtoTest.Msg2Reflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CredentialInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CredentialInfo(CredentialInfo other) : this() {
+      cre_ = other.cre_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CredentialInfo Clone() {
+      return new CredentialInfo(this);
+    }
+
+    /// <summary>Field number for the "cre" field.</summary>
+    public const int CreFieldNumber = 1;
+    private string cre_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Cre {
+      get { return cre_; }
+      set {
+        cre_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CredentialInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CredentialInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Cre != other.Cre) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Cre.Length != 0) hash ^= Cre.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Cre.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Cre);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Cre.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Cre);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CredentialInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Cre.Length != 0) {
+        Cre = other.Cre;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            Cre = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class FrameInfo : pb::IMessage<FrameInfo> {
     private static readonly pb::MessageParser<FrameInfo> _parser = new pb::MessageParser<FrameInfo>(() => new FrameInfo());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1738,7 +1857,7 @@ namespace ProtoTest {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ProtoTest.Msg2Reflection.Descriptor.MessageTypes[8]; }
+      get { return global::ProtoTest.Msg2Reflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
