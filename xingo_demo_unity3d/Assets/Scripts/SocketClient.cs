@@ -75,7 +75,7 @@ public class SocketClient
             ByteBuffer b = new ByteBuffer();
 
             ProtoTest.CredentialInfo p = new ProtoTest.CredentialInfo();
-            p.Cre = GameObject.Find("P1").GetComponent<FlowController>().gameCredential;
+            p.Cre = GameObject.Find("FlowController").GetComponent<FlowController>().gameCredential;
 
             MemoryStream ms = new MemoryStream();
             p.WriteTo(ms);
@@ -201,6 +201,10 @@ public class SocketClient
                 NetMgr.OnBorn(pid.Pid);
                 GameMgr.PlayerIDS.Add(pid.Pid);
                 Debug.Log("Player: " + pid);
+                Loom.QueueOnMainThread(()=>
+                {
+                    PlayerController.Instance.SendPosition();
+                });
             }
         }
 

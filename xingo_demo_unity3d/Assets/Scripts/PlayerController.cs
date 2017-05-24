@@ -258,6 +258,7 @@ public class PlayerController : UnitySingleton<PlayerController>
 
     void OnPlayerController(int type)
     {
+        //Debug.Log(type);
         float angle = InputGameData.Instance.InputAngle;
         int rotateFlag = InputGameData.Instance.RotateFalg;
         if (type == -1)
@@ -295,7 +296,7 @@ public class PlayerController : UnitySingleton<PlayerController>
     }
 
 
-    void SendPosition()
+    public void SendPosition()
     {
         if (netMgr)
         {

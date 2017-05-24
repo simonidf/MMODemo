@@ -36,6 +36,6 @@ public class Login : MonoBehaviour {
     {
         GameMgr.GameIP = ip.text;
         GameMgr.GamePort = int.Parse(port.text);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }
