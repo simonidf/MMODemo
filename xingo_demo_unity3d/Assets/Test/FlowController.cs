@@ -20,7 +20,7 @@ public class FlowController : MonoBehaviour
     // Use this for initialization
     public void Run()
     {
-        waitingHallMsger.Init("192.168.70.6:3001");
+        waitingHallMsger.Init("47.93.192.124:3001");
         matchRoomMsger.Init();
 
         waitingHallMsger.Login(userid, password, OnLoginResult);

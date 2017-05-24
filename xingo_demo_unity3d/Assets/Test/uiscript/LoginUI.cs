@@ -12,6 +12,11 @@ public class LoginUI : MonoBehaviour
 
     public Button btnGo;
 
+    void Start()
+    {
+        inputId.text = Random.Range(1000000, 99999999).ToString();
+    }
+
     public void OnIdModify()
     {
         flowController.userid = inputId.text;
