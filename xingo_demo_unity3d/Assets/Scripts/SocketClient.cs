@@ -211,10 +211,9 @@ public class SocketClient
 
         if (mid == 200)
         {
-
             BroadCast bc;
             bc = BroadCast.Parser.ParseFrom(bytes);
-            //Debug.Log("mid 200: " + bc);
+            Debug.Log("mid 200: " + bc);
 
             if (bc.Tp == 1)
             {
@@ -228,8 +227,9 @@ public class SocketClient
             }
             if (bc.Tp == 2)
             {
+                Debug.LogError("new player pid:" + bc.Pid.ToString());
                 //有玩家加入
-                if (!GameMgr.PlayerIDS.Contains(bc.Pid))
+                if (!GameMgr.PlayerIDS.Contains(bc.Pid)  && bc.Pid!=PlayerController.Instance.MID)
                 {
                     GameMgr.BornPlayer(bc);
                     GameMgr.PlayerIDS.Add(bc.Pid);
@@ -257,9 +257,26 @@ public class SocketClient
             //广播移动的坐标
             if (bc.Tp == 4)
             {
+                
                 if (NetMgr.OnMove != null)
                 {
                     NetMgr.OnMove(bc);
+                }
+
+                //Debug.LogError("new player pid:" + bc.Pid.ToString());
+                //有玩家加入
+                if (!GameMgr.PlayerIDS.Contains(bc.Pid) && bc.Pid != PlayerController.Instance.MID)
+                {
+                    GameMgr.BornPlayer(bc);
+                    GameMgr.PlayerIDS.Add(bc.Pid);
+                    Debug.Log("born player: " + bc.Pid + " pos: " + bc.P);
+                }
+                else
+                {
+                    if (NetMgr.OnMove != null)
+                    {
+                        NetMgr.OnMove(bc);
+                    }
                 }
             }
         }
