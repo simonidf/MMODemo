@@ -1,0 +1,1297 @@
+Unity Player [version: Unity 5.4.1f1_649f48bbbf0f]
+
+KERNELBASE.dll caused a Breakpoint (0x80000003)
+  in module KERNELBASE.dll at 0023:75eb338d.
+
+Error occurred at 2017-05-25_163634.
+E:\UnityWorkSpace\viphxin-xingo_demo_unity3d-master\MMODemo\xingo_demo_unity3d\game.exe, run by simon.
+47% memory in use.
+0 MB physical memory [0 MB free].
+0 MB paging file [0 MB free].
+0 MB user address space [3508 MB free].
+
+Context:
+EDI:    0x1932f824  ESI: 0x101f859c  EAX:   0x00000001
+EBX:    0x1932f000  ECX: 0x0000008a  EDX:   0x00000089
+EIP:    0x75eb338d  EBP: 0x1732fafc  SegCs: 0x00000023
+EFlags: 0x00000246  ESP: 0x1732f808  SegSs: 0x0000002b
+
+Bytes at CS:EIP:
+cc c3 cc cc cc cc cc 8b ff 55 8b ec 83 ec 58 a1 
+
+Stack:
+0x1732f808: 1010c3ac 101be59c 01ae2000 00000001 ......... ......
+0x1732f818: 00000000 00000000 000182dc 00000009 ................
+0x1732f828: 00000000 00010003 00000000 00000000 ................
+0x1732f838: 00000000 00000000 00000000 00000000 ................
+0x1732f848: 00000000 00000000 00000000 00000000 ................
+0x1732f858: 00000000 00000000 00000000 00000000 ................
+0x1732f868: 00000000 00000000 00000000 00000000 ................
+0x1732f878: 00000000 00000000 00000000 00000000 ................
+0x1732f888: 00000000 00000000 00000000 00000000 ................
+0x1732f898: 00000000 00000000 00000000 00000000 ................
+0x1732f8a8: 00000000 00000000 00000000 00000000 ................
+0x1732f8b8: 00000000 00000000 00000000 00000000 ................
+0x1732f8c8: 1932f86c 000009cc 00000000 00000000 l.2.............
+0x1732f8d8: 00000000 00000000 1932f890 77baf8e1 ..........2....w
+0x1732f8e8: 00000023 00000246 1932f824 0000002b #...F...$.2.+...
+0x1732f8f8: 00000000 00000000 00000000 00000000 ................
+0x1732f908: 00000000 00000000 00000000 00000000 ................
+0x1732f918: 00000000 00000000 00000000 00000000 ................
+0x1732f928: 00000000 00000000 00000000 00000000 ................
+0x1732f938: 00000000 00000000 00000000 00000000 ................
+0x1732f948: 00000000 00000000 00000000 00000000 ................
+0x1732f958: 00000000 00000000 00000000 00000000 ................
+0x1732f968: 00000000 00000000 00000000 00000000 ................
+0x1732f978: 00000000 00000000 00000000 00000000 ................
+0x1732f988: 00000000 00000000 00000000 00000000 ................
+0x1732f998: 00000000 00000000 00000000 00000000 ................
+0x1732f9a8: 00000000 00000000 00000000 00000000 ................
+0x1732f9b8: 00000000 00000000 00000000 00000000 ................
+0x1732f9c8: 00000000 00000000 00000000 00000000 ................
+0x1732f9d8: 00000000 00000000 00000000 00000000 ................
+0x1732f9e8: 00000000 00000000 1021e600 1694f95c ..........!.\...
+0x1732f9f8: 1021e600 1732fa08 006eb83f 00000024 ..!...2.?.n.$...
+0x1732fa08: 1732fa20 10063dc1 00000000 163686c0  .2..=........6.
+0x1732fa18: 05e255c0 1694f95c 1732fa38 1005eecf .U..\...8.2.....
+0x1732fa28: 77baf931 747344f4 000009c0 00000a00 1..w.Dst........
+0x1732fa38: 00000000 00000000 1732fa80 0001201f ..........2.. ..
+0x1732fa48: 1732fa68 00000010 00000000 7473457d h.2.........}Est
+0x1732fa58: ee924b70 00000000 0311af48 163686b0 pK......H.....6.
+0x1732fa68: 1732faf4 00000001 00000000 00000000 ..2.............
+0x1732fa78: 16af46f0 77baf8e1 00000000 00000001 .F.....w........
+0x1732fa88: 00000000 00000a00 1307ae08 1732fa80 ..............2.
+0x1732fa98: 00000000 00000000 00000000 1732fa58 ............X.2.
+0x1732faa8: 1732fac0 1010d1bf 1732fb68 1732fb64 ..2.....h.2.d.2.
+0x1732fab8: 1732fb58 00b63b28 1732fadc 1010d256 X.2.(;....2.V...
+0x1732fac8: 1732fb68 01ae2000 00000001 00000000 h.2.. ..........
+0x1732fad8: 1a40ea34 1732faf0 1010db93 1732faec 4.@...2.......2.
+0x1732fae8: 1732fb68 0000002a 1732fafc 1010dc43 h.2.*.....2.C...
+0x1732faf8: ee924b3e 1732fb18 1010d717 00000001 >K....2.........
+0x1732fb08: 1732fb68 00000002 00000000 100142de h.2..........B..
+0x1732fb18: 1732fb50 1010d751 1732fb68 ee924a92 P.2.Q...h.2..J..
+0x1732fb28: 00000002 00000000 100142de 00000000 .........B......
+0x1732fb38: 1732fb24 1732f250 1732ff3c 10118600 $.2.P.2.<.2.....
+0x1732fb48: e9be2912 00000000 1732fb74 1010acc5 .)......t.2.....
+0x1732fb58: 1732fb68 757b110c 00000000 00000001 h.2...{u........
+0x1732fb68: 00000000 1732fb90 ee924ab6 1732fb90 ......2..J....2.
+0x1732fb78: 1010b510 100142de 00000000 00000000 .....B..........
+0x1732fb88: 030b0028 00121800 1732fba4 1010b64c (.........2.L...
+0x1732fb98: 100142de 0000000a 030b0028 1732fbc0 .B......(.....2.
+0x1732fba8: 1010b7b8 00000001 00000000 101f3680 .............6..
+0x1732fbb8: 0000000a 00000000 1732fbe0 1010a7c1 ..........2.....
+0x1732fbc8: 00000000 00000004 1021e600 00000000 ..........!.....
+0x1732fbd8: 030b0028 030b0028 1732fc00 1010edca (...(.....2.....
+0x1732fbe8: 00000028 00000004 120e87b4 120e87b4 (...............
+0x1732fbf8: 0680aa20 0000000a 1732fc18 1005ee95  .........2.....
+0x1732fc08: 00000028 120e87b4 120e87b4 16a8cd78 (...........x...
+0x1732fc18: 1732fc28 1005fe74 120e87b4 1732fecc (.2.t.........2.
+0x1732fc28: 1732fc78 067f07b4 120e87b4 1005eecf x.2.............
+0x1732fc38: 1636be10 12851d90 16966708 16a8cd78 ..6......g..x...
+0x1732fc48: 1732fc58 1005fe74 1732fc78 16988948 X.2.t...x.2.H...
+0x1732fc58: 16af46f0 16a8cd78 067f0789 0680aa20 .F..x....... ...
+0x1732fc68: 1732fecc 16a8cd78 1732fc78 067f077c ..2.x...x.2.|...
+0x1732fc78: 1732fca8 068e3e08 120e87b4 16988948 ..2..>......H...
+0x1732fc88: 16af46f0 16a8cd78 0ee75000 0680aa20 .F..x....P.. ...
+0x1732fc98: 1636be10 16a8cd78 1732fca8 067f077c ..6.x.....2.|...
+0x1732fca8: 1732fcd8 068e3d56 1636be10 0ee75000 ..2.V=....6..P..
+0x1732fcb8: 00000001 05f90780 05f90fb8 068c1d1a ................
+0x1732fcc8: 05f90fb8 0ee75000 1636be10 00000000 .....P....6.....
+0x1732fcd8: 1732fd18 068e3b89 0ee79740 0ee75000 ..2..;..@....P..
+0x1732fce8: 16a8cd78 1732fd68 068c1d1a 0680aa20 x...h.2..... ...
+0x1732fcf8: 14ad3460 14ad48c0 16988948 0680aa20 `4...H..H... ...
+0x1732fd08: 00000000 1732fd68 16a8cd78 1732fecc ....h.2.x.....2.
+0x1732fd18: 1732fd68 068c1d1a 0ee79740 14ad48c0 h.2.....@....H..
+0x1732fd28: 00000001 05f90780 05f90fb8 0680aaaf ................
+0x1732fd38: 05f90fb8 00000000 16988949 0ee79f60 ........I...`...
+0x1732fd48: 00000000 00000000 0ee79f60 00000000 ........`.......
+0x1732fd58: 16a8cd78 1732fdd4 1732fd20 00000000 x.....2. .2.....
+0x1732fd68: 1732fd88 068e3b41 14ad48c0 0680aa20 ..2.A;...H.. ...
+0x1732fd78: 1732fd7c 1732fdd4 16a8cd78 1732fecc |.2...2.x.....2.
+0x1732fd88: 1732fdd4 0680aaaf 1636be58 0000000c ..2.....X.6.....
+0x1732fd98: 1732fda0 00000000 00000000 1732fdbc ..2...........2.
+0x1732fda8: 10001e3d 1695c9e0 1695c9e0 1695c9e0 =...............
+0x1732fdb8: 00000000 00000000 10001de5 05df84a0 ................
+0x1732fdc8: 1695c9e0 1732fdd4 1732fdd8 1732fe04 ......2...2...2.
+0x1732fdd8: 100f1440 14ad3428 1732fe40 1732fecc @...(4..@.2...2.
+0x1732fde8: 068bfa10 00010000 1695c9e0 1695c9e0 ................
+0x1732fdf8: 0000002b 030b6e70 10063d63 1732fe28 +...pn..c=..(.2.
+0x1732fe08: 1005d7ee 1695c9e0 14ad3428 1732fe40 ........(4..@.2.
+0x1732fe18: 1732fecc 10134351 1226753a 1695c9e0 ..2.QC..:u&.....
+0x1732fe28: 1732fe74 10062648 1695c9e0 14ad3428 t.2.H&......(4..
+0x1732fe38: 1732fe40 1732fecc 1732fe74 1695c9e0 @.2...2.t.2.....
+0x1732fe48: 100622f9 1695c9e0 1282b158 1636ab80 ."......X.....6.
+0x1732fe58: 1202b280 1202f304 00000000 1282b158 ............X...
+0x1732fe68: 14ace7e0 1732fe40 ee924fb6 1732fea4 ....@.2..O....2.
+0x1732fe78: 100628df 1695c9e0 14ad3428 14ace810 .(......(4......
+0x1732fe88: 1732fecc 757b1454 00000000 14ab7000 ..2.T.{u.....p..
+0x1732fe98: 030b6e70 1732fea4 00000000 1732fed0 pn....2.......2.
+0x1732fea8: 1007b784 14ad3428 1636ab80 1732fecc ....(4....6...2.
+0x1732feb8: 1732fec8 030b6e70 1636ab40 1000ed0a ..2.pn..@.6.....
+0x1732fec8: 14ace7e0 00000000 1732fef4 1007c3dc ..........2.....
+0x1732fed8: 1636ab40 030bf320 00000000 030cafd8 @.6. ...........
+0x1732fee8: 2585ff1b 1013596c 030bf320 1732ff14 ...%lY.. .....2.
+0x1732fef8: 1007ef83 0000038b 00000000 030cafd8 ................
+0x1732ff08: 00000000 0ee71930 1007c2cb 1732ff4c ....0.......L.2.
+0x1732ff18: 1010c4f4 000182dc ee924e8e 00000000 .........N......
+0x1732ff28: 00000000 030cafd8 00000000 1732ff20 ............ .2.
+0x1732ff38: 1732f250 1732ff88 10118600 e9be2972 P.2...2.....r)..
+0x1732ff48: 00000000 1732ff58 757b336a 030cafd8 ....X.2.j3{u....
+0x1732ff58: 1732ff98 77bc9902 030cafd8 457ab310 ..2....w......zE
+0x1732ff68: 00000000 00000000 030cafd8 80000003 ................
+0x1732ff78: 757d770f 757d770f 1732ff64 1732f254 .w}u.w}ud.2.T.2.
+0x1732ff88: ffffffff 77c058c5 25f38aa8 00000000 .....X.w...%....
+0x1732ff98: 1732ffb0 77bc98d5 1010c4c9 030cafd8 ..2....w........
+0x1732ffa8: 00000000 00000000 00000000 00000000 ................
+0x1732ffb8: 1010c4c9 030cafd8 00000000 00000000 ................
+0x1732ffc8: 00000000 00000000 00000000 00000000 ................
+0x1732ffd8: 00000000 00000000 00000000 00000000 ................
+0x1732ffe8: 00000000 00000000 00000000 00000000 ................
+0x1732fff8: 00000000 00000000                   ........
+
+Module 1
+E:\UnityWorkSpace\viphxin-xingo_demo_unity3d-master\MMODemo\xingo_demo_unity3d\game.exe
+Image Base: 0x003d0000  Image Size: 0x0140a000
+File Size:  20105728    File Time:  2017-05-25_100606
+Version:
+   Company:    
+   Product:    
+   FileDesc:   
+   FileVer:    5.4.1.40776
+   ProdVer:    5.4.1.40776
+
+Module 2
+C:\Windows\system32\SOGOUPY.IME
+Image Base: 0x10000000  Image Size: 0x00526000
+File Size:  5280320     File Time:  2017-04-11_161106
+Version:
+   Company:    Sogou.com Inc.
+   Product:    搜狗拼音输入法
+   FileDesc:   搜狗拼音输入法
+   FileVer:    8.4.0.1062
+   ProdVer:    8.4.0.1062
+
+Module 3
+C:\Windows\system32\nvwgf2um.dll
+Image Base: 0x0ff70000  Image Size: 0x00f1a000
+File Size:  15879776    File Time:  2014-02-16_015020
+Version:
+   Company:    NVIDIA Corporation
+   Product:    NVIDIA D3D10 drivers
+   FileDesc:   NVIDIA D3D10 Driver, Version 332.66 
+   FileVer:    9.18.13.3266
+   ProdVer:    9.18.13.3266
+
+Module 4
+E:\UnityWorkSpace\viphxin-xingo_demo_unity3d-master\MMODemo\xingo_demo_unity3d\game_Data\Mono\mono.dll
+Image Base: 0x10000000  Image Size: 0x00230000
+File Size:  2113496     File Time:  2017-05-25_100606
+Version:
+   Company:    Unity Technologies
+   Product:    libmono
+   FileDesc:   Unity Technologies fork of mono runtime
+   FileVer:    1.0.0.1
+   ProdVer:    1.0.0.1
+
+Module 5
+C:\Program Files (x86)\SogouInput\8.4.0.1062\Resource.dll
+Image Base: 0x10000000  Image Size: 0x000dd000
+File Size:  913984      File Time:  2017-04-11_161100
+Version:
+   Company:    Sogou.com Inc.
+   Product:    搜狗拼音输入法
+   FileDesc:   搜狗拼音输入法 资源
+   FileVer:    8.4.0.1062
+   ProdVer:    8.4.0.1062
+
+Module 6
+C:\Windows\SysWow64\IME\QQPinyinTSF\QQPinyinTSF.dll
+Image Base: 0x0f280000  Image Size: 0x00095000
+File Size:  604264      File Time:  2016-09-22_220428
+Version:
+   Company:    Sogou
+   Product:    QQ拼音输入法
+   FileDesc:   QQ拼音输入法
+   FileVer:    5.4.3311.400
+   ProdVer:    5.4.3311.400
+
+Module 7
+C:\Windows\system32\IME\QQPinyinTSF\QQPinyin.ime
+Image Base: 0x0fe80000  Image Size: 0x004d2000
+File Size:  5024360     File Time:  2016-09-22_220422
+Version:
+   Company:    Sogou
+   Product:    QQ拼音输入法
+   FileDesc:   QQ拼音输入法
+   FileVer:    5.4.3311.400
+   ProdVer:    5.4.3311.400
+
+Module 8
+C:\Windows\system32\DXGIDebug.dll
+Image Base: 0x60bd0000  Image Size: 0x0001d000
+File Size:  117904      File Time:  2015-02-26_183244
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? DirectX for Windows?
+   FileDesc:   DXGI Debug Binary
+   FileVer:    9.30.9600.17336
+   ProdVer:    9.30.9600.17336
+
+Module 9
+D:\Users\simon\AppData\Local\Youdao\Dict\6.3.69.8341\TextExtractorImpl32.dll
+Image Base: 0x60e80000  Image Size: 0x001d1000
+File Size:  1867328     File Time:  2016-09-09_162422
+Version:
+   Company:    
+   Product:    
+   FileDesc:   
+   FileVer:    0.0.0.0
+   ProdVer:    0.0.0.0
+
+Module 10
+D:\Users\simon\AppData\Local\Youdao\Dict\6.3.69.8341\WordStrokeHelper32.dll
+Image Base: 0x6dcf0000  Image Size: 0x0000e000
+File Size:  42560       File Time:  2016-09-09_162422
+Version:
+   Company:    
+   Product:    
+   FileDesc:   
+   FileVer:    0.0.0.0
+   ProdVer:    0.0.0.0
+
+Module 11
+C:\Windows\system32\xinput9_1_0.dll
+Image Base: 0x6e110000  Image Size: 0x00009000
+File Size:  25600       File Time:  2009-07-14_091622
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   XNA 公共控制器
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 12
+C:\Windows\system32\midimap.dll
+Image Base: 0x6e2c0000  Image Size: 0x00007000
+File Size:  16896       File Time:  2009-07-14_091542
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Microsoft MIDI Mapper
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 13
+C:\Windows\system32\AUDIOSES.DLL
+Image Base: 0x6e2d0000  Image Size: 0x00036000
+File Size:  195584      File Time:  2010-11-21_112356
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Audio Session
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 14
+C:\Windows\system32\AVRT.dll
+Image Base: 0x6e310000  Image Size: 0x00007000
+File Size:  14336       File Time:  2009-07-14_091500
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Multimedia Realtime Runtime
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 15
+C:\Windows\system32\MSACM32.dll
+Image Base: 0x6e320000  Image Size: 0x00014000
+File Size:  72192       File Time:  2009-07-14_091544
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Microsoft ACM 音频筛选器
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 16
+C:\Windows\system32\msacm32.drv
+Image Base: 0x6e340000  Image Size: 0x00008000
+File Size:  20992       File Time:  2009-07-14_091410
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Microsoft 声音映射器
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 17
+C:\Windows\System32\MMDevApi.dll
+Image Base: 0x6e3d0000  Image Size: 0x00039000
+File Size:  213504      File Time:  2010-11-21_112352
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   MMDevice API
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 18
+C:\Program Files (x86)\SogouInput\Components\PicFace\1.0.0.1675\PicFace.dll
+Image Base: 0x6e460000  Image Size: 0x00195000
+File Size:  1627200     File Time:  2017-04-25_124732
+Version:
+   Company:    Sogou.com Inc.
+   Product:    搜狗拼音输入法
+   FileDesc:   搜狗拼音输入法 图片表情
+   FileVer:    1.0.0.1675
+   ProdVer:    1.0.0.1675
+
+Module 19
+C:\Windows\system32\ksuser.dll
+Image Base: 0x6ed50000  Image Size: 0x00004000
+File Size:  4608        File Time:  2015-12-09_055348
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   User CSA Library
+   FileVer:    6.1.7601.19091
+   ProdVer:    6.1.7601.19091
+
+Module 20
+C:\Windows\system32\wdmaud.drv
+Image Base: 0x6ed90000  Image Size: 0x00030000
+File Size:  172032      File Time:  2010-11-21_112402
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Winmm 音频系统驱动程序
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 21
+C:\Windows\system32\DDRAW.dll
+Image Base: 0x6edc0000  Image Size: 0x000e7000
+File Size:  531968      File Time:  2009-07-14_091512
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Microsoft DirectDraw
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 22
+C:\Windows\system32\d3d11.dll
+Image Base: 0x6f080000  Image Size: 0x00175000
+File Size:  1505280     File Time:  2016-03-30_175856
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Direct3D 11 Runtime
+   FileVer:    6.2.9200.16570
+   ProdVer:    6.2.9200.16570
+
+Module 23
+C:\Windows\system32\OPENGL32.dll
+Image Base: 0x6f470000  Image Size: 0x000c8000
+File Size:  791552      File Time:  2009-07-14_091614
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   OpenGL Client DLL
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 24
+C:\Windows\system32\GLU32.dll
+Image Base: 0x6f9a0000  Image Size: 0x00022000
+File Size:  130048      File Time:  2009-07-14_091524
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   OpenGL 实用工具库 DLL
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 25
+C:\Windows\system32\HID.DLL
+Image Base: 0x6fc20000  Image Size: 0x00009000
+File Size:  22016       File Time:  2009-07-14_091526
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Hid 用户库
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 26
+C:\Windows\system32\DCIMAN32.dll
+Image Base: 0x71550000  Image Size: 0x00006000
+File Size:  10240       File Time:  2016-11-02_231616
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   DCI Manager
+   FileVer:    6.1.7601.23587
+   ProdVer:    6.1.7601.23587
+
+Module 27
+C:\Windows\system32\api-ms-win-downlevel-advapi32-l2-1-0.dll
+Image Base: 0x716a0000  Image Size: 0x00004000
+File Size:  3584        File Time:  2016-03-30_180008
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   ApiSet Stub DLL
+   FileVer:    6.2.9200.16492
+   ProdVer:    6.2.9200.16492
+
+Module 28
+C:\Program Files (x86)\SogouInput\Components\VoiceInput\1.0.0.52\VoiceInput.dll
+Image Base: 0x71da0000  Image Size: 0x00015000
+File Size:  83008       File Time:  2017-04-25_124734
+Version:
+   Company:    Sogou.com Inc.
+   Product:    搜狗拼音输入法
+   FileDesc:   VoiceInput Dynamic Link Library
+   FileVer:    1.0.0.52
+   ProdVer:    1.0.0.52
+
+Module 29
+C:\Windows\system32\wshbth.dll
+Image Base: 0x71e40000  Image Size: 0x0000d000
+File Size:  36352       File Time:  2010-11-21_112452
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Windows Sockets Helper DLL
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 30
+C:\Windows\System32\winrnr.dll
+Image Base: 0x71e50000  Image Size: 0x00008000
+File Size:  20992       File Time:  2009-07-14_091620
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   LDAP RnR Provider DLL
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 31
+C:\Windows\system32\pnrpnsp.dll
+Image Base: 0x71e60000  Image Size: 0x00012000
+File Size:  65024       File Time:  2009-07-14_091614
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   PNRP 命名空间提供程序
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 32
+C:\Windows\system32\napinsp.dll
+Image Base: 0x71e80000  Image Size: 0x00010000
+File Size:  52224       File Time:  2009-07-14_091604
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   电子邮件命名填充提供程序
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 33
+C:\Windows\system32\uxtheme.dll
+Image Base: 0x71e90000  Image Size: 0x00080000
+File Size:  245760      File Time:  2009-07-14_091126
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Microsoft UxTheme 库
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 34
+C:\Windows\system32\dwmapi.dll
+Image Base: 0x726c0000  Image Size: 0x00013000
+File Size:  67072       File Time:  2009-07-14_091514
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Microsoft 桌面窗口管理器 API
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 35
+C:\Windows\system32\NLAapi.dll
+Image Base: 0x727f0000  Image Size: 0x00010000
+File Size:  52224       File Time:  2010-11-21_112402
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Network Location Awareness 2
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 36
+C:\Windows\system32\dxgi.dll
+Image Base: 0x72860000  Image Size: 0x0004c000
+File Size:  293376      File Time:  2016-03-30_180008
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   DirectX Graphics Infrastructure
+   FileVer:    6.2.9200.16492
+   ProdVer:    6.2.9200.16492
+
+Module 37
+C:\Windows\system32\OLEACC.dll
+Image Base: 0x728b0000  Image Size: 0x0003c000
+File Size:  233472      File Time:  2016-03-30_185652
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Active Accessibility Core Component
+   FileVer:    7.0.0.0
+   ProdVer:    6.1.7601.17676
+
+Module 38
+C:\Windows\system32\MSIMG32.dll
+Image Base: 0x72d30000  Image Size: 0x00005000
+File Size:  4608        File Time:  2009-07-14_091546
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   GDIEXT Client DLL
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 39
+C:\Windows\system32\apphelp.dll
+Image Base: 0x73120000  Image Size: 0x0004c000
+File Size:  295936      File Time:  2010-11-21_112416
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   应用程序兼容性客户端库
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 40
+C:\Windows\system32\ntmarta.dll
+Image Base: 0x73170000  Image Size: 0x00021000
+File Size:  121856      File Time:  2009-07-14_091612
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Windows NT MARTA 提供程序
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 41
+C:\Program Files (x86)\Bonjour\mdnsNSP.dll
+Image Base: 0x73480000  Image Size: 0x00025000
+File Size:  152864      File Time:  2010-10-07_122300
+Version:
+   Company:    Apple Inc.
+   Product:    Bonjour
+   FileDesc:   Bonjour Namespace Provider
+   FileVer:    2.0.4.0
+   ProdVer:    2.0.4.0
+
+Module 42
+C:\Windows\System32\PROPSYS.dll
+Image Base: 0x734b0000  Image Size: 0x000f5000
+File Size:  988160      File Time:  2010-11-21_112410
+Version:
+   Company:    Microsoft Corporation
+   Product:    Windows? Search
+   FileDesc:   Microsoft 属性系统
+   FileVer:    7.0.7601.17514
+   ProdVer:    7.0.7601.17514
+
+Module 43
+C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_41e855142bd5705d\comctl32.dll
+Image Base: 0x73640000  Image Size: 0x0019e000
+File Size:  1680896     File Time:  2015-04-25_015414
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   用户体验控件库
+   FileVer:    6.10.7601.18837
+   ProdVer:    6.1.7601.18837
+
+Module 44
+C:\Windows\system32\webio.dll
+Image Base: 0x74140000  Image Size: 0x0004f000
+File Size:  314880      File Time:  2011-11-17_133504
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Web 传输协议 API
+   FileVer:    6.1.7601.17725
+   ProdVer:    6.1.7601.17725
+
+Module 45
+C:\Windows\system32\WINHTTP.dll
+Image Base: 0x74190000  Image Size: 0x00058000
+File Size:  351744      File Time:  2016-05-11_231926
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Windows HTTP 服务
+   FileVer:    6.1.7601.23451
+   ProdVer:    6.1.7601.23451
+
+Module 46
+C:\Windows\system32\DbgHelp.dll
+Image Base: 0x741f0000  Image Size: 0x000eb000
+File Size:  854016      File Time:  2010-11-21_112410
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Windows Image Helper
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 47
+C:\Windows\system32\DNSAPI.dll
+Image Base: 0x742e0000  Image Size: 0x00044000
+File Size:  270336      File Time:  2011-03-03_133802
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   DNS 客户端 API DLL
+   FileVer:    6.1.7601.17570
+   ProdVer:    6.1.7601.17570
+
+Module 48
+C:\Windows\System32\wship6.dll
+Image Base: 0x74330000  Image Size: 0x00006000
+File Size:  10752       File Time:  2009-07-14_091622
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Winsock2 帮助程序 DLL (TL/IPv6)
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 49
+C:\Windows\System32\wshtcpip.dll
+Image Base: 0x74340000  Image Size: 0x00005000
+File Size:  9216        File Time:  2009-07-14_091622
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Winsock2 帮助程序 DLL (TL/IPv4)
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 50
+C:\Windows\system32\dhcpcsvc6.DLL
+Image Base: 0x74350000  Image Size: 0x0000d000
+File Size:  43008       File Time:  2009-07-14_091512
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   DHCPv6 客户端
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 51
+C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.23688_none_5c0a8e35a00adeb9\gdiplus.dll
+Image Base: 0x74590000  Image Size: 0x00191000
+File Size:  1628672     File Time:  2017-02-11_001710
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Microsoft GDI+
+   FileVer:    6.1.7601.23688
+   ProdVer:    6.1.7601.23688
+
+Module 52
+C:\Windows\system32\MSWSOCK.dll
+Image Base: 0x74730000  Image Size: 0x0003c000
+File Size:  231424      File Time:  2016-05-11_231918
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Microsoft Windows Sockets 2.0 服务提供程序
+   FileVer:    6.1.7601.23451
+   ProdVer:    6.1.7601.23451
+
+Module 53
+C:\Windows\system32\dhcpcsvc.DLL
+Image Base: 0x749c0000  Image Size: 0x00012000
+File Size:  61952       File Time:  2009-07-14_091512
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   DHCP 客户端服务
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 54
+C:\Windows\system32\Secur32.dll
+Image Base: 0x749e0000  Image Size: 0x00008000
+File Size:  22016       File Time:  2017-02-10_001446
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Security Support Provider Interface
+   FileVer:    6.1.7601.23677
+   ProdVer:    6.1.7601.23677
+
+Module 55
+C:\Windows\system32\WINSTA.dll
+Image Base: 0x74a60000  Image Size: 0x00029000
+File Size:  157696      File Time:  2014-07-17_094004
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Winstation Library
+   FileVer:    6.1.7601.18540
+   ProdVer:    6.1.7601.18540
+
+Module 56
+C:\Windows\system32\WINMM.dll
+Image Base: 0x74aa0000  Image Size: 0x00032000
+File Size:  194048      File Time:  2010-11-21_112418
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   MCI API DLL
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 57
+C:\Windows\system32\WINNSI.DLL
+Image Base: 0x74d00000  Image Size: 0x00007000
+File Size:  16896       File Time:  2009-07-14_091620
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Network Store Information RPC interface
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 58
+C:\Windows\system32\IPHLPAPI.DLL
+Image Base: 0x74d10000  Image Size: 0x0001c000
+File Size:  103936      File Time:  2010-11-21_112434
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   IP Helper API
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 59
+C:\Windows\system32\WTSAPI32.dll
+Image Base: 0x75370000  Image Size: 0x0000d000
+File Size:  40448       File Time:  2010-11-21_112356
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Windows Remote Desktop Session Host Server SDK APIs
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 60
+C:\Windows\system32\WINSPOOL.DRV
+Image Base: 0x75410000  Image Size: 0x00051000
+File Size:  320000      File Time:  2010-11-21_112410
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Windows 后台处理程序驱动程序
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 61
+C:\Windows\system32\VERSION.dll
+Image Base: 0x754b0000  Image Size: 0x00009000
+File Size:  21504       File Time:  2009-07-14_091618
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Version Checking and File Installation Libraries
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 62
+C:\Windows\syswow64\CRYPTBASE.dll
+Image Base: 0x75580000  Image Size: 0x0000c000
+File Size:  36352       File Time:  2017-02-09_234916
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Base cryptographic API DLL
+   FileVer:    6.1.7601.23677
+   ProdVer:    6.1.7601.23677
+
+Module 63
+C:\Windows\syswow64\SspiCli.dll
+Image Base: 0x75590000  Image Size: 0x00060000
+File Size:  96768       File Time:  2017-02-10_001452
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Security Support Provider Interface
+   FileVer:    6.1.7601.23677
+   ProdVer:    6.1.7601.23677
+
+Module 64
+C:\Windows\syswow64\OLEAUT32.dll
+Image Base: 0x755f0000  Image Size: 0x00091000
+File Size:  581632      File Time:  2016-10-07_231250
+Version:
+   Company:    Microsoft Corporation
+   Product:    
+   FileDesc:   
+   FileVer:    6.1.7601.23569
+   ProdVer:    6.1.7601.23569
+
+Module 65
+C:\Windows\syswow64\IMM32.dll
+Image Base: 0x75690000  Image Size: 0x00060000
+File Size:  119808      File Time:  2010-11-21_112426
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Multi-User Windows IMM32 API Client DLL
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 66
+C:\Windows\SysWOW64\sechost.dll
+Image Base: 0x756f0000  Image Size: 0x00019000
+File Size:  92160       File Time:  2009-07-14_091614
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Host for SCM/SDDL/LSA Lookup APIs
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 67
+C:\Windows\syswow64\DEVOBJ.dll
+Image Base: 0x75710000  Image Size: 0x00012000
+File Size:  64512       File Time:  2009-07-14_091512
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Device Information Set DLL
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 68
+C:\Windows\syswow64\WLDAP32.dll
+Image Base: 0x75730000  Image Size: 0x00045000
+File Size:  269824      File Time:  2010-11-21_112418
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Win32 LDAP API DLL
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 69
+C:\Windows\syswow64\MSASN1.dll
+Image Base: 0x75780000  Image Size: 0x0000c000
+File Size:  34304       File Time:  2010-11-21_112350
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   ASN.1 Runtime APIs
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 70
+C:\Windows\syswow64\api-ms-win-downlevel-user32-l1-1-0.dll
+Image Base: 0x75790000  Image Size: 0x00004000
+File Size:  4096        File Time:  2016-03-30_180008
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   ApiSet Stub DLL
+   FileVer:    6.2.9200.16492
+   ProdVer:    6.2.9200.16492
+
+Module 71
+C:\Windows\syswow64\kernel32.dll
+Image Base: 0x757a0000  Image Size: 0x00110000
+File Size:  1114112     File Time:  2017-02-10_001452
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Windows NT 基本 API 客户端 DLL
+   FileVer:    6.1.7601.23677
+   ProdVer:    6.1.7601.23677
+
+Module 72
+C:\Windows\syswow64\WS2_32.dll
+Image Base: 0x758b0000  Image Size: 0x00035000
+File Size:  206336      File Time:  2016-05-11_231928
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Windows Socket 2.0 32 位 DLL
+   FileVer:    6.1.7601.23451
+   ProdVer:    6.1.7601.23451
+
+Module 73
+C:\Windows\syswow64\LPK.dll
+Image Base: 0x758f0000  Image Size: 0x0000a000
+File Size:  25600       File Time:  2016-11-02_231632
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Language Pack
+   FileVer:    6.1.7601.23587
+   ProdVer:    6.1.7601.23587
+
+Module 74
+C:\Windows\syswow64\api-ms-win-downlevel-ole32-l1-1-0.dll
+Image Base: 0x75900000  Image Size: 0x00004000
+File Size:  5632        File Time:  2016-03-30_180008
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   ApiSet Stub DLL
+   FileVer:    6.2.9200.16492
+   ProdVer:    6.2.9200.16492
+
+Module 75
+C:\Windows\syswow64\CFGMGR32.dll
+Image Base: 0x75910000  Image Size: 0x00027000
+File Size:  145920      File Time:  2010-11-21_112410
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Configuration Manager DLL
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 76
+C:\Windows\syswow64\USERENV.dll
+Image Base: 0x75940000  Image Size: 0x00017000
+File Size:  81920       File Time:  2010-11-21_112418
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Userenv
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 77
+C:\Windows\SysWOW64\urlmon.dll
+Image Base: 0x75960000  Image Size: 0x0012b000
+File Size:  1181696     File Time:  2016-03-30_180206
+Version:
+   Company:    Microsoft Corporation
+   Product:    Windows? Internet Explorer
+   FileDesc:   Win32 的 OLE32 扩展
+   FileVer:    10.0.9200.17457
+   ProdVer:    10.0.9200.17457
+
+Module 78
+C:\Windows\syswow64\RPCRT4.dll
+Image Base: 0x75a90000  Image Size: 0x000f0000
+File Size:  666112      File Time:  2017-02-10_001452
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   远程过程调用运行时
+   FileVer:    6.1.7601.23677
+   ProdVer:    6.1.7601.23677
+
+Module 79
+C:\Windows\syswow64\iertutil.dll
+Image Base: 0x75b80000  Image Size: 0x001fa000
+File Size:  2056704     File Time:  2016-03-30_180206
+Version:
+   Company:    Microsoft Corporation
+   Product:    Windows? Internet Explorer
+   FileDesc:   Run time utility for Internet Explorer
+   FileVer:    10.0.9200.17457
+   ProdVer:    10.0.9200.17457
+
+Module 80
+C:\Windows\syswow64\CRYPT32.dll
+Image Base: 0x75d80000  Image Size: 0x0011d000
+File Size:  1154048     File Time:  2010-11-21_112400
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   加密 API32
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 81
+C:\Windows\syswow64\KERNELBASE.dll
+Image Base: 0x75ea0000  Image Size: 0x00047000
+File Size:  275456      File Time:  2017-02-10_001452
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Windows NT 基本 API 客户端 DLL
+   FileVer:    6.1.7601.23677
+   ProdVer:    6.1.7601.23677
+
+Module 82
+C:\Windows\syswow64\SETUPAPI.dll
+Image Base: 0x75ef0000  Image Size: 0x0019d000
+File Size:  1667584     File Time:  2010-11-21_112352
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Windows 安装程序 API
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 83
+C:\Windows\syswow64\COMDLG32.dll
+Image Base: 0x76090000  Image Size: 0x0007b000
+File Size:  485888      File Time:  2010-11-21_112350
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Common Dialogs DLL
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 84
+C:\Windows\syswow64\normaliz.DLL
+Image Base: 0x761d0000  Image Size: 0x00003000
+File Size:  2048        File Time:  2009-07-14_090902
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Unicode Normalization DLL
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 85
+C:\Windows\syswow64\NSI.dll
+Image Base: 0x761e0000  Image Size: 0x00006000
+File Size:  8704        File Time:  2009-07-14_091612
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   NSI User-mode interface DLL
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 86
+C:\Windows\syswow64\WINTRUST.dll
+Image Base: 0x761f0000  Image Size: 0x0002d000
+File Size:  172544      File Time:  2012-03-01_133742
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Microsoft Trust Verification APIs
+   FileVer:    6.1.7601.17787
+   ProdVer:    6.1.7601.17787
+
+Module 87
+C:\Windows\syswow64\SHLWAPI.dll
+Image Base: 0x76280000  Image Size: 0x00057000
+File Size:  350208      File Time:  2010-11-21_112350
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   外壳简易实用工具库
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 88
+C:\Windows\syswow64\USER32.dll
+Image Base: 0x762e0000  Image Size: 0x00100000
+File Size:  833024      File Time:  2016-08-16_104816
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   多用户 Windows 用户 API 客户端 DLL
+   FileVer:    6.1.7601.23528
+   ProdVer:    6.1.7601.23528
+
+Module 89
+C:\Windows\syswow64\msvcrt.dll
+Image Base: 0x763e0000  Image Size: 0x000ac000
+File Size:  690688      File Time:  2011-12-16_155300
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Windows NT CRT DLL
+   FileVer:    7.0.7601.17744
+   ProdVer:    6.1.8638.17744
+
+Module 90
+C:\Windows\syswow64\api-ms-win-downlevel-shlwapi-l1-1-0.dll
+Image Base: 0x76490000  Image Size: 0x00004000
+File Size:  9728        File Time:  2016-03-30_180008
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   ApiSet Stub DLL
+   FileVer:    6.2.9200.16492
+   ProdVer:    6.2.9200.16492
+
+Module 91
+C:\Windows\syswow64\api-ms-win-downlevel-version-l1-1-0.dll
+Image Base: 0x764a0000  Image Size: 0x00004000
+File Size:  3072        File Time:  2016-03-30_180008
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   ApiSet Stub DLL
+   FileVer:    6.2.9200.16492
+   ProdVer:    6.2.9200.16492
+
+Module 92
+C:\Windows\syswow64\CLBCatQ.DLL
+Image Base: 0x764b0000  Image Size: 0x00083000
+File Size:  522240      File Time:  2009-07-14_091504
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   COM+ Configuration Catalog
+   FileVer:    2001.12.8530.16385
+   ProdVer:    6.1.7600.16385
+
+Module 93
+C:\Windows\syswow64\api-ms-win-downlevel-advapi32-l1-1-0.dll
+Image Base: 0x76540000  Image Size: 0x00005000
+File Size:  10752       File Time:  2016-03-30_180008
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   ApiSet Stub DLL
+   FileVer:    6.2.9200.16492
+   ProdVer:    6.2.9200.16492
+
+Module 94
+C:\Windows\syswow64\WININET.dll
+Image Base: 0x76550000  Image Size: 0x001b6000
+File Size:  1763328     File Time:  2016-03-30_180206
+Version:
+   Company:    Microsoft Corporation
+   Product:    Windows? Internet Explorer
+   FileDesc:   Win32 的 Internet 扩展
+   FileVer:    10.0.9200.17457
+   ProdVer:    10.0.9200.17457
+
+Module 95
+C:\Windows\syswow64\SHELL32.dll
+Image Base: 0x76710000  Image Size: 0x00c4b000
+File Size:  12875776    File Time:  2015-08-07_014452
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Windows 外壳公用 DLL
+   FileVer:    6.1.7601.18952
+   ProdVer:    6.1.7601.18952
+
+Module 96
+C:\Windows\syswow64\USP10.dll
+Image Base: 0x77360000  Image Size: 0x0009d000
+File Size:  628736      File Time:  2017-02-11_001738
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft(R) Uniscribe Unicode script processor
+   FileDesc:   Uniscribe Unicode script processor
+   FileVer:    1.626.7601.23688
+   ProdVer:    1.626.7601.23688
+
+Module 97
+C:\Windows\syswow64\PSAPI.DLL
+Image Base: 0x77400000  Image Size: 0x00005000
+File Size:  6144        File Time:  2009-07-14_091614
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   Process Status Helper
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 98
+C:\Windows\syswow64\api-ms-win-downlevel-normaliz-l1-1-0.dll
+Image Base: 0x77410000  Image Size: 0x00003000
+File Size:  2560        File Time:  2016-03-30_180008
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   ApiSet Stub DLL
+   FileVer:    6.2.9200.16492
+   ProdVer:    6.2.9200.16492
+
+Module 99
+C:\Windows\syswow64\ole32.dll
+Image Base: 0x77420000  Image Size: 0x0015c000
+File Size:  1413632     File Time:  2016-01-17_023638
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   用于 Windows 的 Microsoft OLE
+   FileVer:    6.1.7601.19131
+   ProdVer:    6.1.7601.19131
+
+Module 100
+C:\Windows\syswow64\ADVAPI32.dll
+Image Base: 0x77580000  Image Size: 0x000a1000
+File Size:  644096      File Time:  2017-02-10_001426
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   高级 Windows 32 基本 API
+   FileVer:    6.1.7601.23677
+   ProdVer:    6.1.7601.23677
+
+Module 101
+C:\Windows\syswow64\GDI32.dll
+Image Base: 0x77630000  Image Size: 0x00090000
+File Size:  312832      File Time:  2017-02-11_001740
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   GDI Client DLL
+   FileVer:    6.1.7601.23688
+   ProdVer:    6.1.7601.23688
+
+Module 102
+C:\Windows\syswow64\MSCTF.dll
+Image Base: 0x776c0000  Image Size: 0x000cd000
+File Size:  829952      File Time:  2016-10-11_231830
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   MSCTF 服务器 DLL
+   FileVer:    6.1.7601.23572
+   ProdVer:    6.1.7601.23572
+
+Module 103
+C:\Windows\syswow64\profapi.dll
+Image Base: 0x77b60000  Image Size: 0x0000b000
+File Size:  31744       File Time:  2009-07-14_091614
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   User Profile Basic API
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 104
+C:\Windows\SysWOW64\ntdll.dll
+Image Base: 0x77b90000  Image Size: 0x00180000
+File Size:  1314112     File Time:  2017-02-10_001654
+Version:
+   Company:    Microsoft Corporation
+   Product:    Microsoft? Windows? Operating System
+   FileDesc:   NT 层 DLL
+   FileVer:    6.1.7601.23677
+   ProdVer:    6.1.7601.23677
+
+
+== [end of error.log] ==
