@@ -9,6 +9,7 @@ public class PlayerController : UnitySingleton<PlayerController>
 {
 
     public float mSpeed = 9.0f;
+    public float reducePower = 0.5f;
     public Animator playerAnimator;
     public CharacterController playerControl;
     public float 摇杆单位角度 = 22.5f;
@@ -90,46 +91,46 @@ public class PlayerController : UnitySingleton<PlayerController>
         else if (angle > 摇杆单位角度 && angle <= 3 * 摇杆单位角度) //斜右上方45度角
         {
             Vector3 v = new Vector3(1, 0, 1);
-            m_CurrentMovement = playerRotation * v.normalized * mSpeed;
+            m_CurrentMovement = playerRotation * v.normalized * mSpeed * reducePower;
 
             InputGameData.NetData |= (int)InputNetData.Up | (int)InputNetData.Right;
         }
         else if (angle > 3 * 摇杆单位角度 && angle <= 5 * 摇杆单位角度) //right
         {
-            m_CurrentMovement = playerTransform.right * mSpeed;
+            m_CurrentMovement = playerTransform.right * mSpeed * reducePower;
 
             InputGameData.NetData |= (int)InputNetData.Right;
         }
         else if (angle > 5 * 摇杆单位角度 && angle <= 7 * 摇杆单位角度) //右下
         {
             Vector3 v = new Vector3(1, 0, -1);
-            m_CurrentMovement = playerRotation * v.normalized * mSpeed;
+            m_CurrentMovement = playerRotation * v.normalized * mSpeed * reducePower;
 
             InputGameData.NetData = (int)InputNetData.Right | (int)InputNetData.Down;
         }
         else if (angle > 7 * 摇杆单位角度 || angle <= -7 * 摇杆单位角度) //下
         {
-            m_CurrentMovement = -playerTransform.forward * mSpeed;
+            m_CurrentMovement = -playerTransform.forward * mSpeed * reducePower;
 
             InputGameData.NetData |= (int)InputNetData.Down;
         }
         else if (angle > -摇杆单位角度 * 7 && angle <= -摇杆单位角度 * 5) //左下
         {
             Vector3 v = new Vector3(-1, 0, -1);
-            m_CurrentMovement = playerRotation * v.normalized * mSpeed;
+            m_CurrentMovement = playerRotation * v.normalized * mSpeed * reducePower;
 
             InputGameData.NetData |= (int)InputNetData.Down | (int)InputNetData.Left;
         }
         else if (angle > -摇杆单位角度 * 5 && angle <= -摇杆单位角度 * 3) //左
         {
-            m_CurrentMovement = -playerTransform.right * mSpeed;
+            m_CurrentMovement = -playerTransform.right * mSpeed * reducePower;
 
             InputGameData.NetData |= (int)InputNetData.Left;
         }
         else if (angle > -摇杆单位角度 * 3 && angle < -摇杆单位角度) //左上
         {
             Vector3 v = new Vector3(-1, 0, 1);
-            m_CurrentMovement = playerRotation * v.normalized * mSpeed;
+            m_CurrentMovement = playerRotation * v.normalized * mSpeed * reducePower;
 
             InputGameData.NetData |= (int)InputNetData.Left | (int)InputNetData.Up;
         }
@@ -239,6 +240,9 @@ public class PlayerController : UnitySingleton<PlayerController>
             {
                 mouseX = Input.mousePosition.x;
             }
+
+            
+
             if (Input.GetMouseButton(1) && !mouseX.Equals(Input.mousePosition.x))
             {
                 if (mouseX > Input.mousePosition.x) InputGameData.Instance.RotateFalg = -1;
@@ -276,20 +280,38 @@ public class PlayerController : UnitySingleton<PlayerController>
         //旋转 调整视角的旋转
         if (CanRotate && type == 1)
         {
-            if (rotateFlag == 1)
-            {
-                playerTransform.Rotate(new Vector3(0, 旋转速度 * Time.deltaTime, 0));
+            //if (rotateFlag == 1)
+            //{
+            //    playerTransform.Rotate(new Vector3(0, 旋转速度 * Time.deltaTime, 0));
 
-                InputGameData.NetData &= ~(int)InputNetData.Rotate_Left;
-                InputGameData.NetData |= (int)InputNetData.Rotate_Right;
-            }
-            else
-            {
-                playerTransform.Rotate(new Vector3(0, -旋转速度 * Time.deltaTime, 0));
+            //    InputGameData.NetData &= ~(int)InputNetData.Rotate_Left;
+            //    InputGameData.NetData |= (int)InputNetData.Rotate_Right;
+            //}
+            //else
+            //{
+            //    playerTransform.Rotate(new Vector3(0, -旋转速度 * Time.deltaTime, 0));
 
-                InputGameData.NetData &= ~(int)InputNetData.Rotate_Right;
-                InputGameData.NetData |= (int)InputNetData.Rotate_Left;
+            //    InputGameData.NetData &= ~(int)InputNetData.Rotate_Right;
+            //    InputGameData.NetData |= (int)InputNetData.Rotate_Left;
+            //}
+
+            Vector2 playerScreenPos = Camera.main.WorldToScreenPoint(transform.position);
+            Vector2 mousePos = Input.mousePosition;
+            Vector2 directionTarget = mousePos - playerScreenPos;
+            //Vector2 directionTarget = mousePos;
+            directionTarget = directionTarget.normalized;
+
+            float a = Vector2.Angle(Vector2.up, directionTarget);
+
+            if (playerScreenPos.x < mousePos.x)
+            {
+                a = Vector2.Angle(Vector2.down, directionTarget);
+                a += 180;
             }
+
+            a *= -1;
+
+            transform.localEulerAngles = new Vector3(0, a, 0);
         }
 
         SendPosition();
