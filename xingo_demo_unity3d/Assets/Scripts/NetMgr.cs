@@ -19,6 +19,7 @@ public class NetMgr : MonoBehaviour
     public static Action<Google.Protobuf.Collections.RepeatedField<ProtoTest.ObjInfo>> OnBornBullet;
     public static Action<Google.Protobuf.Collections.RepeatedField<ProtoTest.ObjInfo>> OnMoveBullet;
     public static Action<Google.Protobuf.Collections.RepeatedField<ProtoTest.ObjInfo>> OnBulletDeleted;
+    public static Action<Google.Protobuf.Collections.RepeatedField<ProtoTest.PlayerInfo>> OnPlayerDead;
     public static Action<Google.Protobuf.Collections.RepeatedField<ProtoTest.Hit>> OnHit;
 
     SocketClient SocketClient

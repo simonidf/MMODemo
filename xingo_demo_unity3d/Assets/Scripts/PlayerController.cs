@@ -49,6 +49,7 @@ public class PlayerController : UnitySingleton<PlayerController>
         NetMgr.OnBorn += OnBorn;
         NetMgr.OnMove += OnMove;
         NetMgr.OnHit += BeHit;
+        NetMgr.OnPlayerDead += OnPlayerDead;
 
         netMgr.SendConnect(GameMgr.GameIP, GameMgr.GamePort);
     }
@@ -59,7 +60,33 @@ public class PlayerController : UnitySingleton<PlayerController>
         {
             if (VARIABLE.Pid == MID)
             {
-                playerAnimator.Play("BeHit");
+                playerAnimator.Play("Dead");
+            }
+        }
+    }
+
+    void OnPlayerDead(Google.Protobuf.Collections.RepeatedField<ProtoTest.PlayerInfo> infos)
+    {
+        foreach (var VARIABLE in infos)
+        {
+            if (VARIABLE.Pid == MID)
+            {
+                playerAnimator.Play("BeDead");
+                CanMove = false;
+                CanRotate = false;
+            }
+        }
+    }
+
+    void OnPlayerAlive(Google.Protobuf.Collections.RepeatedField<ProtoTest.PlayerInfo> infos)
+    {
+        foreach (var VARIABLE in infos)
+        {
+            if (VARIABLE.Pid == MID)
+            {
+                playerAnimator.Play("行走状态");
+                CanMove = true;
+                CanRotate = true;
             }
         }
     }

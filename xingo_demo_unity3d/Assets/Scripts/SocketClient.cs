@@ -325,6 +325,7 @@ public class SocketClient
                 if (frameInfo.ObjBorn!=null && frameInfo.ObjBorn.Count>0) NetMgr.OnBornBullet(frameInfo.ObjBorn);
                 if (frameInfo.ObjMove != null && frameInfo.ObjMove.Count > 0) NetMgr.OnMoveBullet(frameInfo.ObjMove);
                 if (frameInfo.ObjDeleted != null && frameInfo.ObjDeleted.Count > 0) NetMgr.OnBulletDeleted(frameInfo.ObjDeleted);
+                if (frameInfo.PlayerDead != null && frameInfo.PlayerDead.Count > 0) NetMgr.OnPlayerDead(frameInfo.PlayerDead);
             });
         }
     }
